@@ -22,7 +22,12 @@
 				k.async = 1; k.src = r; a.parentNode.insertBefore(k, a);
 			})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-			window.ym(99809576, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
+			window.ym(99809576, "init", {
+				clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true,
+				userParams: {
+					username: ApplicationContext?.UserName || 'Guest'
+				}
+			});
 		}
 	</script>
 </head>
